@@ -1,0 +1,35 @@
+.env
+.env.*
+!.env.example
+
+# Virtualenv
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# Logs
+*.log
+
+# Local databases
+local.db
+*.sqlite
+*.sqlite3
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+
+# Alembic (keep migrations, ignore local artifacts)
+alembic/__pycache__/
+
