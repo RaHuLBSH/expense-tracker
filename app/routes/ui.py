@@ -42,9 +42,9 @@ def home(
     total_amount = str(total_val.quantize(Decimal("0.01"), rounding=ROUND_HALF_UP))
 
     return templates.TemplateResponse(
+        request,
         "index.html",
         {
-            "request": request,
             "items": items,
             "total_amount": total_amount,
             "category": category or "",
