@@ -42,8 +42,6 @@ def create_app() -> FastAPI:
     app.include_router(expenses_router)
     app.include_router(ui_router)
 
-    app.mount("/static", StaticFiles(directory="app/static"), name="static")
-
     return app
 
 
